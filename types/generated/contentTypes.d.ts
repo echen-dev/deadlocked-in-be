@@ -465,6 +465,8 @@ export interface ApiHeroHero extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    rank: Schema.Attribute.Enumeration<['S', 'A', 'B', 'C', 'D']> &
+      Schema.Attribute.DefaultTo<'S'>;
     releaseDate: Schema.Attribute.Date;
     role: Schema.Attribute.Enumeration<
       [

@@ -50,6 +50,17 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "rank": {
+      "type": "enumeration",
+      "default": "S",
+      "enum": [
+        "S",
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
     }
   }
 }
